@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo"></div>
+
+        <nav>
+            <a href="#">Inicio</a>
+            <a href="#">Quiénes somos</a>
+            <a href="#">Contacto</a>
+        </nav>
+
+        <div class="perfil-container">
+            <button class="btn-registro" onclick="abrirRegistro()">Registro</button>
+            <div class="perfil" onclick="togglePerfilMenu()"></div>
+
+            <div class="menu-perfil" id="menuPerfil">
+                <button onclick="alert('Tu perfil ❤')">Ver perfil</button>
+                <button onclick="alert('Sesión cerrada')">Cerrar sesión</button>
+            </div>
+        </div>
+    </header>
+
+    <section class="contenido">
+        <div class="card"><div class="foto-placeholder"></div></div>
+        <div class="card">Texto de ejemplo 1</div>
+        <div class="card"><div class="foto-placeholder"></div></div>
+        <div class="card">Texto de ejemplo 2</div>
+    </section>
+
+    <footer>
+        ©2025 – Página contacto dirección
+    </footer>
+
+    <!-- MODAL REGISTRO -->
+    <div class="modal-bg" id="modalRegistro">
+        <div class="modal">
+            <h3>Registro</h3>
+            <input type="text" placeholder="Nombre" class="input-box">
+            <input type="email" placeholder="Email" class="input-box">
+            <input type="tel" placeholder="Teléfono" class="input-box">
+            <button onclick="cerrarRegistro()">Cerrar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
